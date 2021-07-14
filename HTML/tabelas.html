@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Aula 4</title>
+        <meta http-equiv="Refresh" content="5">
+    </head>
+    <body>
+        
+        <h1>Tabelas</h1>
+        
+        <p>
+            Para tabelas utilizamos a tag table. <br>
+            As linhas da tabela são representadas pela tag tr >> table row. <br>
+            As colunas são representadas pela tag td >> table division. <br>
+            Podem ser adicionadas novas tabelas dentro de uma célula de outra tabela.
+        </p>
+
+        <table border="1" width="600" cellspacing="0" cellpadding="0" align="center"> 
+        <!--O parâmetro width é utilizado para definir a largura das celulas-->
+        <!--O parâmetro cellspacing é utilizado para definir a distância entre as células-->
+        <!--O parâmetro cellpadding é utilizado para definir a margem interna das células-->
+            <tr>
+                <td width="600" align="center">Fabricantes</td>
+                <td width="600" align="center">Modelo 1</td>
+                <td width="600" align="center">Modelo 2</td>
+            </tr>
+            <tr>
+                <td>VW</td>
+                <td>Gol</td>
+                <td>Fox</td>
+            </tr>
+            <tr>
+                <td>GM</td>
+                <td>Onix</td>
+                <td>Prisma</td>
+            </tr>
+            <tr>
+                <td>Ford</td>
+                <td>EcoSport</td>
+                <td>Fusion</td>
+            </tr>
+            <tr>
+                <td>FIAT</td>
+                <td>Palio</td>
+                <td>Bravo</td>
+            </tr>
+            <tr>
+                <!--Para mesclar colunas utiliza-se o parâmetro colspan-->
+                <td colspan="3" align="center">Modelos Nacionais</td>
+            </tr>
+            <tr>
+                <!--Código para o nagegador interpretar somente um espaço "&nbsp;"-->
+                <!--Para mesclar linhas utiliza-se o parâmetro rowspan-->
+                <td rowspan="2" align="center">Texto</td>
+                <td colspan="2">&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+
+        </table>
+    </body>
+</html>

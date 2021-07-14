@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>Aula 8</title>
+        <meta http-equiv="Refresh" content="9">
+        <style type="text/css">
+
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                background-color: #252525;
+            }
+
+            h1, p {
+                text-align: center;
+                color: #9f9f9f;
+                font-family: Verdana;
+            }
+
+            .paragrafos {
+                text-align: justify;
+            }
+
+            .links {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .lCabecalho, .lDownload {
+                border: 1px solid #9f9f9f;
+                color: #252525;
+                padding: 5px;
+                border-radius: 10px;
+                background-color: #0099FF;
+                font-family: Verdana;
+                text-decoration: none;
+            }
+
+            /**
+            *Alterando o estado padrão dos links
+            *Altera a cor original, que por padrão é azul.
+                a:link{}
+            *Altera a cor depois de visitado, que por padrão é roxo.
+                a:visited{}
+            *Altera a cor quando está em uso, que por padrão é vermelho.
+                a:active{}
+            *Altera a cor quando o mouse é posicionado em cima do link. 
+            **/
+            .lCabecalho:hover, .lVaAoInicio:hover{
+                text-decoration: underline;
+                color: #9f9f9f
+            }
+
+            /** Criando uma formatação para um único link específico **/
+            .lDownload {
+                text-decoration: none;
+                color: #99ff99;
+            }
+            .lDownload:hover {
+                text-decoration: underline;
+                color: #ff9999;
+            }
+            .lVaAoInicio {
+                border: 1px solid #9f9f9f;
+                color: #252525;
+                padding: 5px;
+                border-radius: 10px;
+                background-color: #0099FF;
+                font-family: Verdana;
+                text-decoration: none;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <a name="inicio"></a>
+        
+        <h1>Links e formatação CSS para links</h1>
+
+        <p>
+            Para criar-mos um link utilizamos a tag 'a'. <br>
+            Podemos criar links que nos direcionam a outras páginas <br> 
+            de internet, de download e os links conhecidos como âncoras. <br>
+            Os links âncoras servem para facilitar a navegação dentro de uma página.
+        </p>
+        
+        <div class="links">
+            <!--O parâmetro href serve para indicar o caminho do link-->
+            <!--O parâmetro target serve para indicar se o link abrirá em uma nova guia ou não-->
+            <a class="lCabecalho" href="https://www.youtube.com/c/cfbcursos" target="_blank">Canal CFB Cursos</a>
+            <a class="lDownload" href="Arquivos/Comunicação.rar">Baixar arquivo</a>
+            <a class="lCabecalho" href="#sp">Segundo parágrafo</a>
+            <a class="lCabecalho" href="#fim">Fim</a>
+        </div>
+
+        <p class="paragrafos">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales, purus vitae finibus porttitor, lorem nisi faucibus risus, sed tempor augue risus eu est. Maecenas tellus metus, vehicula a sollicitudin quis, dapibus vitae ipsum. Praesent volutpat tellus malesuada, tincidunt ipsum eget, egestas tortor. Aenean vehicula risus vel urna tincidunt elementum. Morbi malesuada quis dolor nec convallis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque consequat vehicula lectus vitae tincidunt. Mauris id turpis et mauris iaculis ultrices et et magna. Phasellus velit leo, iaculis sed commodo quis, porta ac magna. Duis id metus nibh. Nunc elit libero, gravida ut molestie at, porttitor a turpis. Donec auctor molestie ligula, euismod consectetur justo tincidunt eget. Nam vel ultrices risus.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sit amet blandit lorem. Nullam quis dictum tortor. In hac habitasse platea dictumst. Mauris maximus molestie leo eu ultrices. Etiam pulvinar blandit accumsan. In condimentum tortor nec felis porta, lacinia pellentesque felis facilisis. Donec sit amet mattis metus.
+            Quisque varius vitae velit ac consequat. Maecenas id ligula eu arcu suscipit cursus eu eget risus. Suspendisse metus sem, condimentum id faucibus lobortis, varius nec tortor. Vivamus posuere libero sed dictum placerat. Aenean in libero mollis, facilisis lectus eu, ultricies sem. Curabitur volutpat est mauris, id tempus orci ornare quis. Praesent vitae massa tincidunt, egestas quam eget, dictum ligula. Pellentesque efficitur nec risus ac tempor. Nulla quis ante purus. Fusce sed lorem in felis pellentesque convallis. Nam fermentum justo vitae augue tincidunt, sed ullamcorper ipsum posuere. Quisque vitae eleifend mi. Donec et faucibus purus, vitae rhoncus justo.
+        </p>
+
+        <a name="sp"></a>
+
+        <p class="paragrafos">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales, purus vitae finibus porttitor, lorem nisi faucibus risus, sed tempor augue risus eu est. Maecenas tellus metus, vehicula a sollicitudin quis, dapibus vitae ipsum. Praesent volutpat tellus malesuada, tincidunt ipsum eget, egestas tortor. Aenean vehicula risus vel urna tincidunt elementum. Morbi malesuada quis dolor nec convallis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque consequat vehicula lectus vitae tincidunt. Mauris id turpis et mauris iaculis ultrices et et magna. Phasellus velit leo, iaculis sed commodo quis, porta ac magna. Duis id metus nibh. Nunc elit libero, gravida ut molestie at, porttitor a turpis. Donec auctor molestie ligula, euismod consectetur justo tincidunt eget. Nam vel ultrices risus.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sit amet blandit lorem. Nullam quis dictum tortor. In hac habitasse platea dictumst. Mauris maximus molestie leo eu ultrices. Etiam pulvinar blandit accumsan. In condimentum tortor nec felis porta, lacinia pellentesque felis facilisis. Donec sit amet mattis metus.
+            Quisque varius vitae velit ac consequat. Maecenas id ligula eu arcu suscipit cursus eu eget risus. Suspendisse metus sem, condimentum id faucibus lobortis, varius nec tortor. Vivamus posuere libero sed dictum placerat. Aenean in libero mollis, facilisis lectus eu, ultricies sem. Curabitur volutpat est mauris, id tempus orci ornare quis. Praesent vitae massa tincidunt, egestas quam eget, dictum ligula. Pellentesque efficitur nec risus ac tempor. Nulla quis ante purus. Fusce sed lorem in felis pellentesque convallis. Nam fermentum justo vitae augue tincidunt, sed ullamcorper ipsum posuere. Quisque vitae eleifend mi. Donec et faucibus purus, vitae rhoncus justo.
+        </p>
+
+        <p class="paragrafos">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales, purus vitae finibus porttitor, lorem nisi faucibus risus, sed tempor augue risus eu est. Maecenas tellus metus, vehicula a sollicitudin quis, dapibus vitae ipsum. Praesent volutpat tellus malesuada, tincidunt ipsum eget, egestas tortor. Aenean vehicula risus vel urna tincidunt elementum. Morbi malesuada quis dolor nec convallis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque consequat vehicula lectus vitae tincidunt. Mauris id turpis et mauris iaculis ultrices et et magna. Phasellus velit leo, iaculis sed commodo quis, porta ac magna. Duis id metus nibh. Nunc elit libero, gravida ut molestie at, porttitor a turpis. Donec auctor molestie ligula, euismod consectetur justo tincidunt eget. Nam vel ultrices risus.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sit amet blandit lorem. Nullam quis dictum tortor. In hac habitasse platea dictumst. Mauris maximus molestie leo eu ultrices. Etiam pulvinar blandit accumsan. In condimentum tortor nec felis porta, lacinia pellentesque felis facilisis. Donec sit amet mattis metus.
+            Quisque varius vitae velit ac consequat. Maecenas id ligula eu arcu suscipit cursus eu eget risus. Suspendisse metus sem, condimentum id faucibus lobortis, varius nec tortor. Vivamus posuere libero sed dictum placerat. Aenean in libero mollis, facilisis lectus eu, ultricies sem. Curabitur volutpat est mauris, id tempus orci ornare quis. Praesent vitae massa tincidunt, egestas quam eget, dictum ligula. Pellentesque efficitur nec risus ac tempor. Nulla quis ante purus. Fusce sed lorem in felis pellentesque convallis. Nam fermentum justo vitae augue tincidunt, sed ullamcorper ipsum posuere. Quisque vitae eleifend mi. Donec et faucibus purus, vitae rhoncus justo.
+        </p>
+
+        <a name="fim"></a>
+
+        <div class="links">
+            <a class="lVaAoInicio" href="#inicio">Volte ao início</a>
+        </div>
+
+    </body>
+</html>
