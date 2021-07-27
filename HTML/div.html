@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <Title>Aula 11</Title>
+        <style type="text/css">
+            body {
+                background-color: #252525;
+            }
+
+            h1, p {
+                color: #9f9f9f;
+                text-align: justify;
+            }
+
+            p {
+                margin-top: 0px;
+            }
+            
+            .imagem {
+                width: 50px;
+                height: 50px;
+            }
+            
+            /**
+                *Utilizamos o hashtag '#' para referenciar um id do body
+                *O parâmetro position: relative; faz com que a div role junto com a página
+                *Utilizando o position: fixed; faz com que a div fique fixa em uma DETERMINADA posição da JANELA
+                *Utilizando o position: absolute;, a div fica fixa em uma DETERMINADA posição da PÁGINA WEB
+                *
+                *Por padrão o parâmetro position recebe o valor relative
+                *O parâmetro z-index indica a ordem em que as divs ficam uma a frente da outra
+            **/
+
+            #cx {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: 1px solid white;
+            }
+            
+            #cx1 {
+                padding: 10px;
+                margin-top: 5px;
+                border: 1px solid white;
+            }
+
+            #cx2 {
+                position: fixed;
+                bottom: 15px;
+                right: 15px;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <div id="cx">
+
+            <h1>Divs e formatação Css para divs</h1>
+
+            <p>
+            As tags div servem para agrupar um conjunto de elementos e ajudar na formatação. <br>
+            É interessante formatar as divs com o parâmetro id para identificar cada conjunto <br>
+            de elementos.
+            </p>
+        
+        </div>
+        
+        <div id="cx1">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia, metus nec ornare cursus, sapien justo dictum lacus, et gravida quam diam eget eros. Maecenas commodo risus scelerisque fringilla pulvinar. Duis eleifend metus tellus, quis fringilla urna consectetur nec. Proin dolor nulla, ullamcorper ac massa id, ultrices egestas velit. Nullam non purus sed odio vestibulum accumsan laoreet ac eros. Nam tristique dui in massa convallis mollis. Sed in iaculis arcu. Pellentesque suscipit turpis non leo elementum, ut tristique sem finibus. Nullam euismod magna ut mauris ullamcorper faucibus. Etiam tincidunt quis justo eget molestie. Nam maximus tristique lorem, at fringilla neque rutrum id.
+
+                Etiam non mollis odio. Donec at urna aliquam, auctor tellus vitae, tempus erat. Aliquam purus augue, tempor vitae velit ut, pretium bibendum felis. Donec at iaculis nibh. Phasellus ut convallis quam. Cras vehicula dui sapien, eu malesuada ante condimentum hendrerit. In hac habitasse platea dictumst. Vivamus sit amet odio ac tortor pharetra rhoncus ut eu turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ultricies volutpat tellus id euismod. Mauris sed mi lacus.
+
+                Vivamus posuere efficitur laoreet. Aliquam erat volutpat. Vivamus nunc felis, facilisis at metus in, aliquam rhoncus erat. Sed ac augue eu ante tincidunt dapibus. In pulvinar tellus at vulputate molestie. Suspendisse nunc augue, lacinia et leo sit amet, mollis dignissim purus. Aenean convallis sodales massa, ac efficitur purus laoreet quis. Nunc non ante orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse vel vehicula erat.
+
+                Integer vel maximus odio. Duis et consequat mi. Integer et aliquet est. Mauris quis lectus dictum, eleifend sapien nec, viverra justo. Morbi nec purus vitae neque condimentum rhoncus. Curabitur sapien lectus, blandit vel venenatis sit amet, pretium vel elit. Nulla ut massa varius, facilisis diam et, malesuada leo. Sed hendrerit vulputate nisi, vel commodo ipsum tincidunt quis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent vel nibh lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed at blandit tellus, non placerat turpis. Curabitur gravida turpis ultrices finibus tincidunt. In scelerisque, metus vel pharetra imperdiet, elit eros semper neque, id interdum justo sem sit amet nibh. Curabitur augue magna, ultricies sit amet laoreet eu, tristique quis urna.
+
+                Nullam scelerisque sollicitudin mauris eu condimentum. Curabitur non nisl lorem. Suspendisse sed enim sit amet risus fermentum fermentum eget in elit. Pellentesque lobortis, lectus et dignissim maximus, nisi felis ornare ligula, nec cursus tortor leo a mi. Phasellus id nibh quis odio placerat mollis vitae at purus. Nullam a purus ac est suscipit pharetra sit amet vitae purus. Nulla ut consectetur tortor, sit amet lacinia nisl. In sit amet nisi dictum, dapibus orci ut, tincidunt odio. Nullam condimentum dolor sed metus egestas finibus. Nullam vitae eros quis purus auctor cursus.
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lacinia, metus nec ornare cursus, sapien justo dictum lacus, et gravida quam diam eget eros. Maecenas commodo risus scelerisque fringilla pulvinar. Duis eleifend metus tellus, quis fringilla urna consectetur nec. Proin dolor nulla, ullamcorper ac massa id, ultrices egestas velit. Nullam non purus sed odio vestibulum accumsan laoreet ac eros. Nam tristique dui in massa convallis mollis. Sed in iaculis arcu. Pellentesque suscipit turpis non leo elementum, ut tristique sem finibus. Nullam euismod magna ut mauris ullamcorper faucibus. Etiam tincidunt quis justo eget molestie. Nam maximus tristique lorem, at fringilla neque rutrum id.
+
+                Etiam non mollis odio. Donec at urna aliquam, auctor tellus vitae, tempus erat. Aliquam purus augue, tempor vitae velit ut, pretium bibendum felis. Donec at iaculis nibh. Phasellus ut convallis quam. Cras vehicula dui sapien, eu malesuada ante condimentum hendrerit. In hac habitasse platea dictumst. Vivamus sit amet odio ac tortor pharetra rhoncus ut eu turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ultricies volutpat tellus id euismod. Mauris sed mi lacus.
+
+                Vivamus posuere efficitur laoreet. Aliquam erat volutpat. Vivamus nunc felis, facilisis at metus in, aliquam rhoncus erat. Sed ac augue eu ante tincidunt dapibus. In pulvinar tellus at vulputate molestie. Suspendisse nunc augue, lacinia et leo sit amet, mollis dignissim purus. Aenean convallis sodales massa, ac efficitur purus laoreet quis. Nunc non ante orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse vel vehicula erat.
+
+                Integer vel maximus odio. Duis et consequat mi. Integer et aliquet est. Mauris quis lectus dictum, eleifend sapien nec, viverra justo. Morbi nec purus vitae neque condimentum rhoncus. Curabitur sapien lectus, blandit vel venenatis sit amet, pretium vel elit. Nulla ut massa varius, facilisis diam et, malesuada leo. Sed hendrerit vulputate nisi, vel commodo ipsum tincidunt quis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent vel nibh lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed at blandit tellus, non placerat turpis. Curabitur gravida turpis ultrices finibus tincidunt. In scelerisque, metus vel pharetra imperdiet, elit eros semper neque, id interdum justo sem sit amet nibh. Curabitur augue magna, ultricies sit amet laoreet eu, tristique quis urna.
+
+                Nullam scelerisque sollicitudin mauris eu condimentum. Curabitur non nisl lorem. Suspendisse sed enim sit amet risus fermentum fermentum eget in elit. Pellentesque lobortis, lectus et dignissim maximus, nisi felis ornare ligula, nec cursus tortor leo a mi. Phasellus id nibh quis odio placerat mollis vitae at purus. Nullam a purus ac est suscipit pharetra sit amet vitae purus. Nulla ut consectetur tortor, sit amet lacinia nisl. In sit amet nisi dictum, dapibus orci ut, tincidunt odio. Nullam condimentum dolor sed metus egestas finibus. Nullam vitae eros quis purus auctor cursus.
+            </p>
+        </div>
+
+        <div id="cx2">
+            <img class="imagem" src="Arquivos/imagens/brasilIcon.png">
+        </div>
+        
+    </body>
+</html>

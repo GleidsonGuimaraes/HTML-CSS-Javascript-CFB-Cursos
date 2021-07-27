@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+#elementosCabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(../Arquivos/layout/fundoMatrix.jpg);
+}
+#botaoHeader {
+    margin-top: 60px;
+}
+.imgBotao {
+    border: 0px;
+}
+#banerCfb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 70%;
+    background-image: url(../Arquivos/layout/banerCfb.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;               
+}
+#redesSociais {
+    position: absolute;
+    top: 150px;
+    right: 17%;
+}

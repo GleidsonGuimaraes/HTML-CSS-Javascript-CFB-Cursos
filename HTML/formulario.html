@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Aula 16</title>
+    </head>
+    <body>
+        <!--
+            -no parâmetro method podemos utilizar dois métodos: post E get
+            -no método get o envio dos dados é feito todo exposto na barra de endereços
+            -no método post o envio é feito de forma oculta na barra de endereços
+            -o parâmetro action recebe o endereço que irá armazenar os dados do formulário
+        -->
+        <form action="" name="F_aula" method="post">
+
+            <label>Nome:</label><br>
+            <!--
+                -os parâmetros size e maxlength são descrito pela quantidade de caracteres
+                -o parâmetro type indica diferentes tipos de caixas input que podem ser utilizadas
+                -o size representa o tamanho da tag input
+                -o maxlength representa o número máximo de caracteres que podem ser utilizados
+            -->
+            <input type="text" name="F_Nome" size="40" maxlength="30"><br>
+
+            <label>Senha:</label><br>
+            <input type="password" name="F_Senha" size="40" maxlength="8"><br><br>
+
+            <label>Qual esporte você pratica?</label><br>
+            <input type="checkbox" name="F_Futebol" value="futebol">
+            <label>Futebol</label><br>
+            <input type="checkbox" name="F_Natacao" value="natacao">
+            <label>Natação</label><br>
+            <input type="checkbox" name="F_Basquete" value="basquete">
+            <label>Basquete</label><br><br>
+
+            <label>Possui veículo?</label><br>
+            <!--
+                o parâmetro type com valor radio precisa ter o mesmo nome para trabalhar em conjunto
+            -->
+            <input type="radio" name="F_Veiculo" value="s"><label>Sim</label><br>
+            <input type="radio" name="F_Veiculo" value="n"><label>Não</label><br><br>
+
+            <label>Estado:</label><br>
+            <select name="F_Estado">
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+                <option value="ES">Espírito Santo</option>
+            </select><br><br>
+
+            <label>Comentário:</label><br>
+            <textarea name="F_Comentario" cols="45" rows="5"></textarea><br><br>
+
+            <!--
+                -Temos três tipos de botões: submit, reset e buttom
+                -O submit pega todos os dados do formulário e envia para o arquivo configurado no parâmetro action presente na tag form
+                -O reset tem a função de limpar os campos do formulário
+                -O buttom não tem ação pré-configurada, a ação dele é feita através de uma função Javascript, por exemplo
+            -->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            <input type="button" value="Sem ação">
+
+        </form>
+    </body>
+</html>

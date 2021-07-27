@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Aula 9</title>
+        <style type="text/css">
+
+        /** 
+        *Fazemos o uso de imagens de fundo com o parâmetro background-image
+        *Utilizamos o parâmetro url() para indicar o local da imagem
+        **/
+        body {
+            background-image: url(Arquivos/imagens/mapaFundo.jpg);
+            background-position: center;
+            background-size: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        h1, p{
+            text-align: center;
+        }
+
+        p {
+            margin-top: 0px;
+            margin-bottom: 220px;
+            font-style: bold;
+        }
+
+        .imagens {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        img {
+            width: 70px;
+            height: 70px;
+            cursor: hand;
+        }
+
+        img:hover{
+            zoom: 175%;
+        }
+
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Imagens e formatação CSS para imagens</h1>
+
+        <p>
+            Para utilizar imagens devemos fazer o uso da tag img. <br>
+            A tag img apenas reserva aquele espaço para a imagem. <br>
+            Para indicar onde se encontra a imagem, utilizamos o parâmetro src="".
+        </p>
+        
+        <div class="imagens">
+            <img src="Arquivos/imagens/usaIcon.png">
+            <img src="Arquivos/imagens/brasilIcon.png">
+            <img src="Arquivos/imagens/israelIcon.png">
+            <img src="Arquivos/imagens/japanIcon.png">
+        </div>
+       
+    </body>
+</html>
