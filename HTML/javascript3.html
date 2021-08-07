@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Aula 20 - Javascript 3</title>
+        <script language="Javascript">
+
+            var pontos = 10
+            var energia = 100
+            var vidas = 3
+
+            if(energia == 50){
+                alert("Metade da vida!")
+            }else if(energia < 30 && energia > 1){
+                alert("Vida baixa!")
+            }else if(energia == 100){
+                alert("Vida cheia!")
+            }else if(energia == 0){
+                alert("Você perdeu!")
+                var tentativas = confirm("Deseja continuar?")
+                if(tentativas){
+                    if(vidas > 0){
+                        vidas--
+                    }else{
+                        alert("Suas tentativas acabaram. Game Over!")
+                    }
+                }else{
+                    alert("Game Over!")
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

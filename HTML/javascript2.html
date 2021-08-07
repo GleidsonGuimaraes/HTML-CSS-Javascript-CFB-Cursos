@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Aula 19 - Javascript 2</title>
+        <script language = "Javascript">
+
+            var usuario = confirm("Você é o Ironman?")
+
+            if(usuario) {
+                alert("Aula 2 Javascript - Seja bem vindo Ironman.")
+            } else {
+                var nome = prompt("Seu nome:", "")
+                alert("Aula 2 Javascript - Seja bem vindo " + nome + ".")
+            }            
+
+            /*
+                * A caixa prompt recebe dois parâmetros.
+                * O primeiro recebe uma mensagem como se fosse um label.
+                * O segundo recebe outra mensagem que será exibida dentro de um text input.
+                * Após preenchido, o text input pode armazenar esse valor em uma variável, conforme exemplificado acima.
+            */
+            // prompt("Seu nome:", "")
+
+            /*
+                * O confirm recebe um parâmetro e retorna dois botões, o OK e o Cancelar.
+                * Estes valores podem ser armazenados no seu código para serem utilizados.
+            */
+            // confirm("Você é o Ironman?")
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
