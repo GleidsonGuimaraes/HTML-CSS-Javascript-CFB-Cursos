@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Aula 25 - Javascript Classe Date</title>
+        <script language='Javascript'>
+
+            /* A classe Date permite que sejam extraídos e exibidos dados do sistema operacional referentes a data e hora. */
+            var data = new Date()
+            var meses = new Array("Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro")
+            var diaSemana = new Array("Domingo","Segunda-Feira","Terça-Feira","Quarta-Feira","Quinta-Feira","Sexta-Feira","Sábado")
+
+            // Utilizamos o método get para extrair os dados da classe Date.
+            document.write(diaSemana[data.getDay()] + ", " + data.getDate() + " de " + meses[data.getMonth()] + " de " + data.getFullYear() + "<br/>")
+
+            // Função utilizada para passar os dados para o formulário.
+            function movRel(){ 
+                var relogio = new Date()
+                var hora = relogio.getHours()
+                var minutos = relogio.getMinutes()
+                var segundos = relogio.getSeconds()
+
+                // Condição para exibir duas casas nos dados do relógio.
+                if(hora < 10){
+                    hora = "0" + relogio.getHours()
+                }
+                if(minutos < 10){
+                    minutos = "0" + relogio.getMinutes()
+                }
+                if(segundos < 10){
+                    segundos = "0" + relogio.getSeconds()
+                }
+
+                var impHoras = hora + ":" + minutos + ":" + segundos
+
+                // Método para retornar dados da função para um determinado elemento no body.
+                // Esses dados serão retornados para o formulário no body.
+                document.fRelogio.rel.value = impHoras
+
+                // Método para atualizar o relógio de segundo em segundo.
+                /* O setTimeout recebe dois argumentos, o primeiro é a função que ele irá chamar e o segundo é o tempo em milisegundos que essa função será atualizada.  */
+                setTimeout("movRel()",1000)
+            }
+
+        </script>
+    </head>
+    <!-- O método "onload" faz com que a função só seja chamada no carregamento da página. -->
+    <body onload="movRel()">
+        
+        <form name="fRelogio">
+            <input type="text" name="rel" size="10">
+        </form>
+
+    </body>
+</html>

@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #252525;
+}
+
+h1 {
+    color: #9b9b9b;
+}
+
+#cursos {
+    background-color: #404040;
+    width: 200px;
+    border: 0px;
+}
+
+#cursos:hover{
+    background-color: #9b9b9b;
+}
+
+option:hover{
+    color:#008ADC;
+    cursor: hand;
+}

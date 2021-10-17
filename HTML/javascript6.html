@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Aula 23 - Caixa de listagem com links</title>
+        <script language="Javascript">
+
+            function AbrePg(link) {
+                // Abre o link na mesma janela
+                // window.location.href = link
+                
+                // Abre o link em uma nova janela
+                window.open(link)
+            }
+
+        </script>
+        <link rel="stylesheet" href="./estilos/javascript6.css">
+    </head>
+    <body>
+
+        <p><h1>Listagem de cursos front-end.</h1></p>
+        
+        <select name="cursos" id="cursos" size="4" onchange="AbrePg(value)">
+            <option value="https://www.youtube.com/watch?v=o5fd5FUk2fk&list=PLx4x_zx8csUgluS7H9gyb9HH7g7F2ZWSQ">Html</option>
+            <option value="https://www.youtube.com/watch?v=GPK8A-A156o&list=PLx4x_zx8csUi47Bnugpk78nqJN6rYvEnV">Css</option>
+            <option value="https://www.youtube.com/watch?v=lcKo-ycLDNw&list=PLx4x_zx8csUj3IbPQ4_X5jis_SkCol3eC">Javascript</option>
+            <option value="https://www.youtube.com/watch?v=1LhX2u6_BJE&list=PLx4x_zx8csUh752BVDGZkxYpY9lS40fyC">React</option>
+        </select>
+
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Aula 26 - Eventos</title>
+        <script language="Javascript">
+
+            // O evento onLoad="" é acionado quando a tag é carregada.
+            function cump(){
+                alert("Olá, seja bem vindo!")
+            }
+
+            // O evento onClique="" é acionado quando o elemento recebe um clique
+            function clique(){
+                alert("Fui clicado!")
+            }
+
+            // O evento onfocus="" é acionado quando o elemento é selecionado e entra em foco
+            function entra(){
+                alert("Fui selecionado!")
+            }
+
+            // O evento onblur="" é acionado quando o elemento sai do foco
+            function sai(){
+                alert("Perdi o foco!")
+            }
+
+            // O evento onUnload="" é acionado quando o elemento é fechado
+            function fechar(){
+                alert("Tchau...")
+            }
+
+            /*
+                *Lista de mais alguns exemplos de eventos
+
+                *onDbClick
+                *onKeyDown
+                *onKeyPress
+                *onKeyup
+                *onMouseDown
+                *onMouseOut
+                *onMouseOver
+                *onReset
+                *onSubmit
+                *onSelect
+
+                *Atente-se ao elemento em que cada evento pode ser utilizado.
+            */
+
+        </script>
+    </head>
+    <body onload="cump()" onunload="fechar()">
+
+        <input type="button" value="Aula JS - Eventos" onClick="clique()"/>
+        <br/><br/>
+        <input type="text" name="text-aula" onfocus="entra()"  onblur="sai()"/>
+
+    </body>
+</html>

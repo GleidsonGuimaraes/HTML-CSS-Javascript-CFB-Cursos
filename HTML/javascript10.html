@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Aula 29 - Javascript 10 - Validação de formulários</title>
+        <script type="text/javascript" src="./Javascript/valForm.js"></script>
+    </head>
+    <body>
+        
+        <form name="cad" onsubmit="return validar()">
+
+            <label for="">Nome:</label>
+            <input type="text" name="fnome" size="50" onfocus="mudaCor(this,1)" onblur="mudaCor(this,2)"><br><br>
+
+            <label for="">Senha:</label>
+            <input type="password" name="fsenha" size="10" onfocus="mudaCor(this,1)" onblur="mudaCor(this,2)"><br><br>
+
+            <label for="">Telefone:</label>
+            <input type="text" name="ftel" size="15" onfocus="mudaCor(this,1)" onblur="mudaCor(this,2)"><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+    </body>
+</html>
