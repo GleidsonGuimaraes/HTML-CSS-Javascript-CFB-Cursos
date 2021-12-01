@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 35 - Menu DropDown</title>
+
+    <link rel="stylesheet" href="/HTML/estilos/aula35.css">
+</head>
+<body>
+    
+    <div onmouseleave="fecharSubmenu()">
+        <div class="menu" onmouseover="mostrarSubmenu1()">
+            Google
+        </div>
+        <div class="submenu" id="sm1">
+            <div>Youtube</div>
+            <div>Gmail</div>
+            <div>Maps</div>
+        </div>
+    </div>
+
+    <div onmouseleave="fecharSubmenu()">
+        <div class="menu" onmouseover="mostrarSubmenu2()">
+            Transportes
+        </div>
+        <div class="submenu" id="sm2">
+            <div>Carro</div>
+            <div>Avião</div>
+            <div>Navio</div>
+        </div>
+    </div>
+
+    <script src="/HTML/Javascript/aula35.js"></script>
+
+</body>
+</html>

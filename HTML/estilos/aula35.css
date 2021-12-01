@@ -1,0 +1,21 @@
+.border {
+    border: 1px solid black;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+}
+
+body div {
+    width: 150px;
+}
+
+.menu {
+    background-color: #ccc;
+}
+
+.submenu {
+    background-color: #eee;
+    visibility: hidden;
+}
