@@ -1,0 +1,22 @@
+section{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+input{
+    width: 100px;
+}
+
+#moldura{
+    width: 600px;
+    height: 450px;
+    background: #eee;
+    transition: background-image 1s ;
+}

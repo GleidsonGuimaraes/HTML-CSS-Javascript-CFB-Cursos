@@ -1,0 +1,8 @@
+body {
+    background-image: url(/HTML/Arquivos/imagens/aula38/f2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: #000;
+    background-position: center;
+}
