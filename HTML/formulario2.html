@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Novos elementos do formulário no Html5</title>
+    
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #formulario {
+            background: #eee;
+            padding: 30px;
+            border-radius: 10px;
+            width: 40%;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        #buttons {
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        .bt {
+            margin-right: 10px;
+            width: 100px;
+            height: 25px;
+            border: none;
+            background-color: #0099ee;
+            border-radius: 5px;
+        }
+
+        .bt:hover {
+            background-color: #00aaee;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <form name="fContato" action="#" method="post">
+
+        <div id="formulario">
+
+            <div>
+                <label>Nome</label>
+                <input type="text" maxlength="50" size="60" name="fNome" autofocus required>            
+            </div>
+    
+            <div>
+                <label>Telefone</label>
+                <input type="tel" maxlength="15" size="20" name="fFone" placeholder="(88) 8 8888-8888">
+            </div>
+    
+            <div>
+                <label>Email de contato</label>
+                <input type="email" maxlength="50" size="60" name="fEmail" required>
+            </div>
+    
+            <div>
+                <label>Cep</label>
+                <input type="text" maxlength="10" size="15" name="fCep" placeholder="xxxxx-xxx" pattern="\d{5}-?\d{3}" required>
+            </div>
+    
+            <div>
+                <label>Módulo que pretende iniciar</label>
+                <input type="number" min="1" max="10" step="1" value="1" name="fModulo" required>
+            </div>
+            
+            <div>
+                <label>Horário de Início</label>
+                <input type="time" value="10:00" step="1800" name="fHorario" required>
+            </div>
+    
+            <div>
+                <label>Cor da Pasta</label>
+                <input type="color" name="fColor" value="#880088" required>
+            </div>
+    
+            <div>
+                <label>Data de Nascimento</label>
+                <input type="date" name="fNascimento" required>
+            </div>
+    
+            <div id="buttons">
+                <input class="bt" type="submit" value="Enviar" name="Enviar">
+                <input class="bt" type="reset" value="Reset" name="Reset">
+            </div>
+
+        </div>
+
+    </form>
+
+</body>
+</html>
