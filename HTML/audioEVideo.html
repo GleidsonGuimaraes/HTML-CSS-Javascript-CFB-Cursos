@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio e Vídeo em html5</title>
+</head>
+<body>
+    
+    <!-- Parâmetros booleanos podem ser declarados diretamente sem valores atribuidos a eles -->
+    <!-- O parâmetro preload="" faz o precarregamento dos arquivos no onload da página -->
+    <!-- 
+        ATENÇÃO COM A QUANTIDADE DE ARQUIVOS A SEREM CARREGADOS COM O PRELOAD, ISSO PODE CAUSAR LENTIDÃO NO 
+        CARREGAMENTO DA PÁGINA 
+    -->
+    <audio controls autoplay loop muted preload="auto">
+        <source src="/HTML/Arquivos/musicasEVideos/som.mp3">
+    </audio>
+
+    <!-- O parâmetro poster="" permite que uma imagem seja atribuida aoo player antes da execução -->
+    <!-- Os parâmetros booleanos apresentados na tag audio também funcionam na tag video -->
+    <video poster="" controls muted>
+        <source src=""> 
+    </video>
+
+</body>
+</html>
