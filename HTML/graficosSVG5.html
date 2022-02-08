@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos SVG - Gradiente</title>
+</head>
+<body>
+    
+    <svg width="600" height="600">
+
+        <!-- Tipo de gradiente 1 -->
+        <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#ff0;" />
+            <stop offset="50%" style="stop-color:#0ff;" />
+            <stop offset="100%" style="stop-color:#f00;" />
+        </linearGradient>
+
+        <!-- Tipo de gradiente 2 -->
+        <radialGradient id="g2" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="0%" style="stop-color:#ff0;" />
+            <stop offset="100%" style="stop-color:#f00;" />
+        </radialGradient>
+
+        <rect x="0" y="0" width="300" height="300" fill="url(#g2)" />
+
+    </svg>
+
+</body>
+</html>
