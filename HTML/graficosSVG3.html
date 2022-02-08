@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos SVG - Path</title>
+</head>
+<body>
+    
+    <svg width="600" height="600">
+
+        <!-- Sintáxe -->
+        <!-- 
+            <path d="   Primeiro ponto(M0,0)
+                        Posição dos basers(c0,0 0,0)
+                        Segundo ponto(0,0)
+                        Posição dos basers(c0,0 0,0)
+                        Terceiro ponto(0,0)
+                        Posição dos basers(c0,0 0,0)
+            " />
+        -->
+
+        <!-- 
+            O coreldraw é uma boa referência para identificar a posição dos basers para as curvas
+        -->
+        <path style="stroke: #000; stroke-width: 1; fill: none;" 
+        d="     M0,0 
+            c300,0 600,300
+                600,600 
+            c-150,-150 -450,-150
+                -600,0
+            c150,-150 150,-450
+                0,-600
+        " />
+
+    </svg>
+
+</body>
+</html>
