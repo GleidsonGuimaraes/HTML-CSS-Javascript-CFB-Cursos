@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenteditable e Spellcheck</title>
+</head>
+<body>
+    
+    <!-- O parâmetro contenteditable faz com que a div tenha o conteúdo de texto editável -->
+    <!-- Por padrão o spellcheck já vem setado como true e serve para ativar a correção automática -->
+    <div id="dv1" contenteditable="true" spellcheck="false" style="border: solid 1px #000; margin-bottom: 10px;">
+        Canal Fessor Bruno
+    </div>
+
+    <button onclick="document.getElementById('dv2').innerHTML = document.getElementById('dv1').textContent">Clique aqui</button>
+
+    <div id="dv2" style="border: solid 1px #000; margin-top: 10px;">
+        Curso de HTML5
+    </div>
+
+</body>
+</html>
