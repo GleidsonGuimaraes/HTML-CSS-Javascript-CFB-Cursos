@@ -1,0 +1,32 @@
+*{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 550px;
+}
+
+body div{
+  align-self: center;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+#organizador{
+  align-self: flex-start;
+  flex-grow: 1;
+}
+
+.texto{
+  font-size: 16px;
+  font-weight: 0;
+  margin-top: 5px;
+}
+
+#textoDif{
+  align-self: flex-end;
+  font-size: 12px;
+}

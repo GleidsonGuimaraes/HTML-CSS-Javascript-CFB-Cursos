@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 1 - Inserindo Css na página</title>
+
+  <!-- 
+    Prioridade Css: Inline, Incorporado e Externo, respectivamente.
+   -->
+
+  <!-- Método externo referenciando um arquivo externo através da tag link-->
+  <link rel="stylesheet" href="css/inserindoCss.css">
+
+  <!-- Método incorporado utilizando a tag style dentro da tag head-->
+  <style>
+    body{
+      border: 1px solid #000;
+      height: 50%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Método inline utilizando o parâmetro style direto na tag -->
+  <div id="dv1" style="color: #f00;">Hello world!</div>
+</body>
+</html>
