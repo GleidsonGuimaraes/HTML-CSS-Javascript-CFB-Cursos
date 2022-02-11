@@ -1,0 +1,18 @@
+body{
+  background-image: url(/HTML/Arquivos/imagens/brasilIcon.png), url(/HTML/Arquivos/imagens/mapaFundo2.jpg);
+  background-size:  50px, 100%;
+  background-repeat: no-repeat;
+  /* Podemos utilizar medidas em pixels no background-position, também... */
+  background-position: right 50px, center 0px;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+  background-image: url(/HTML/Arquivos/imagens/mapaFundo.jpg);
+  background-size: 100%;
+  background-position: center;
+  text-align: center;
+  font-weight: bold;
+  color: #bbb;
+}

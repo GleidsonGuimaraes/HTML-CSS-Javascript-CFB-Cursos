@@ -1,0 +1,21 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+p{
+  /* Cores em hexadecimal */
+  /* Forma completa */
+  color: #9bb09f;
+  /* Forma resumida */
+  background-color: #09f;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+p:hover{
+  color: #000;
+  /* Cores em rgb */
+  background-color: rgb(205,74,102);
+}
