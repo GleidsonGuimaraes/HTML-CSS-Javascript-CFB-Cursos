@@ -1,0 +1,22 @@
+#d1, #d2, #d3{
+  border: 10px dotted #000;
+  padding: 35px;
+  /* background-color: #0f0; */
+  background-image: url(/HTML/Arquivos/imagens/mapaFundo.jpg);
+  background-size: 100%;
+  margin-bottom: 15px;
+  color: #eee;
+}
+
+/* O background-clip possui três valores sendo o border-box o seu valor padrão */
+#d1{
+  background-clip: border-box;
+}
+
+#d2{
+  background-clip: padding-box;
+}
+
+#d3{
+  background-clip: content-box;
+}

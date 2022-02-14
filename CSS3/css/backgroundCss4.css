@@ -1,0 +1,7 @@
+body{
+  /* Metapropriedade background */
+  /* color image repeat position size*/
+  /* O parâmetro size precisa ter um separador "/" para indicar que aquela medida é um tamanho */
+  /* Para ajustar o tamanho da imagem de acordo com a janela utilize valores em % */
+  background: #000 url(/HTML/Arquivos/imagens/brasilIcon.png) repeat-x 0px 0px / 75px;
+}
