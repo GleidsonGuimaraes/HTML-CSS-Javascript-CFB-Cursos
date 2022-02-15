@@ -1,0 +1,19 @@
+#d1, #d2{
+  width: 200px;
+  height: 200px;
+  background-color: #ddd;
+  border: 20px solid #000;
+}
+
+#d1{
+  /* 
+    dotted: pontilhado | dashed: trastejada | double: linhas duplas | groove: 3D | ridge: 3D com cores invertidas | inset e outset: baixo e alto relevo | none: sem bordas | hidden: oculto
+  */
+  border-style: dotted;
+  border-color: #33f;
+}
+
+#d2{
+  border-style: groove;
+  border-color: #f33;
+}

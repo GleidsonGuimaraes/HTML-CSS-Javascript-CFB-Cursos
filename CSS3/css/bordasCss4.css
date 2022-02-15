@@ -1,0 +1,12 @@
+p{
+  border: 60px solid;
+  /* 
+    A imagem para a borda precisa ser preparada para o fatiamento funcionar corretamente.
+    O padrão "round" repete a imagem e o "stretch" estica.
+    Sintáxe: url(imagem) | fatiamento em px | padrão de repetição ou esticar
+  */
+  /* 
+    Obs: A imagem utilizada nesse exemplo não está preparada para o border-image.
+  */
+  border-image: url(/HTML/Arquivos/imagens/israelIcon.png) 256 round;
+}
