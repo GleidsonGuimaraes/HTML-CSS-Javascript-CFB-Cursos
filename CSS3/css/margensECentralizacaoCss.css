@@ -1,0 +1,23 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+div{
+  border: 1px solid #000;
+  /* O valor "auto" só funciona se o elemento tiver largura definida  */
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#dv1{
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+#dv2{
+  width: 300px;
+  height: 100px;
+}
