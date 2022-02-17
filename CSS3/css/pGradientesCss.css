@@ -1,0 +1,48 @@
+body{
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div{
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  margin: 10px;
+}
+
+#dv1{
+  background: linear-gradient(to left, #f00, #ff0);
+}
+
+#dv2{
+  background: linear-gradient(45deg, #f0f, #0ff);
+}
+
+#dv3{
+  background: linear-gradient(180deg, #f00 5%, #ff0 50%, #0f0 60%);
+}
+
+#dv4{
+  background: radial-gradient(#f00 25%, #ff0 70%);
+}
+
+#dv5{
+  width: 300px;
+  height: 200px;
+  background: repeating-radial-gradient(#a0a 15%, #5bb 30%);
+}
+
+#dv6{
+  background: linear-gradient(to left, #f00 25%, #ff0 75%);
+  width: 200px;
+  text-align: center;
+  font-size: 30px;
+  /* 
+    Deixando o texto gradiente:
+
+    Faça o texto ficar transparente e recorte em volta do seu contorno.
+  */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
