@@ -1,0 +1,15 @@
+/* font-face permite que seja enviado uma fonte direto no pacote de arquivos do site */
+/* Basta baixar o arquivo, anexar junto aos arquivos e apotar onde ele está no "src: url();" */
+@font-face {
+  font-family: fontCFB;
+  src: url();
+}
+
+p{
+  /* Fonte retirada do google.com/fonts */
+  font-family: 'Bebas Neue', cursive;
+  font-style: oblique;
+  font-size: 16px;
+  font-weight: lighter; /* Negrito */
+  font-variant: normal; /* Transforma todo o texto em maiúsculo destacando todas as letras maiúsculas */ 
+}

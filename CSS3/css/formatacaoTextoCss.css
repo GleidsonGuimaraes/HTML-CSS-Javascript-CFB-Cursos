@@ -1,0 +1,42 @@
+p{
+  text-decoration: none;
+  text-align: justify;
+  text-indent: 50px; /* Espaçamento de parágrafo */
+  letter-spacing: 2px; /* Espaçamento entre letras */
+  line-height: 2; /* Espaçamento entre linhas | Altura da linha */
+  direction: ltr; /* Direção do texto */
+  word-spacing: 5px; /* Espaçamento entre palavras */
+  white-space: normal; /* Quebra de linha do texto */
+  word-break: break-all; /* Faz a quebra da palavra */
+  text-align-last: right; /* Faz o alinhamento da última linha do parágrafo */
+}
+
+#p1{
+  width: 400px;
+  height: 200px;
+  overflow: scroll; /* Organiza todo texto que excede o tamanho do conteiner */
+  color: #f00;
+  /* text-align: center; */
+  /* text-decoration: none; */
+  text-transform: lowercase;
+}
+
+#p2{
+  color:#0f0;
+  /* text-align: left; */
+  /* text-decoration: underline; */
+  text-transform: uppercase;
+}
+
+#p3{
+  color: #00f;
+  /* text-align: right; */
+  /* text-decoration: overline; */
+  text-transform: capitalize;
+}
+
+#p4{
+  color: #f0f;
+  /* text-align: justify; */
+  /* text-decoration: line-through; */
+}
