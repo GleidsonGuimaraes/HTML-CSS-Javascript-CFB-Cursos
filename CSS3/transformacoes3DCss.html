@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transformaçoes 3D em Css</title>
+
+  <link rel="stylesheet" href="/CSS3/css/transformacoes3DCss.css">
+
+  <script>
+
+    let rotInit, ny=0;
+
+    function rotacionarY() {
+      clearInterval(rotInit);
+      rotInit = setInterval("startRotate()", 10);
+    }
+
+    function startRotate() {
+      ny += 1;
+      document.getElementById("dv1").style.transform = `rotateY(${ny}deg)`;
+      if(ny === 180 || ny >= 360){
+        clearInterval(rotInit);
+        if(ny >= 360) {
+          ny = 0;
+        }
+      }
+    }
+
+  </script>
+
+</head>
+<body>
+
+  <div id="dv1" onclick="rotacionarY()"></div>
+  
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+#dv1{
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to right, #f00, #ff0);
+
+  /* Prefira utilizar o rotateX, rotateY ou rotateZ do que o rotate3d */
+  /* transform: rotateX(20deg); */
+  /* transform: rotateY(60deg); */
+  /* transform: rotateZ(25deg); */
+
+  /* Indica se a parte de trás será visível ou não */
+  /* backface-visibility: hidden; */
+
+}
+
+body{
+  /* Te da a noção de profundidade no elemento */
+  perspective: 800px;
+}
