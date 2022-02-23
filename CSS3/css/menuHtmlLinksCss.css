@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Por algum motivo o css da tag object está dando erro */
+object{
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid #000;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  background-color: #004;
+  color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+
+a:hover{
+  background-color: #33b;
+}
