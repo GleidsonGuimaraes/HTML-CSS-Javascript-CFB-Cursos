@@ -1,0 +1,26 @@
+ul, ol{
+  /* list-style-type: disc;
+  list-style-position: inside; */
+  list-style: none;
+  display: flex;
+  margin: 0px 0px 10px 0px;
+}
+
+li{
+  background: #040;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+li:hover{
+  background: #080;
+}
