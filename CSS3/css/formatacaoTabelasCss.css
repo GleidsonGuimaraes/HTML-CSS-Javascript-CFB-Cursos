@@ -1,0 +1,32 @@
+table, td, th{
+  border: 1px solid #000;
+}
+
+table{
+  width: 500px;
+  table-layout: fixed; /* Valor para tornar todas as células do mesmo tamanho */
+  border-collapse: collapse; /* Configurando o espaçamento das bordas de cada célula */
+  border-spacing: 5px 20px; /* Só funciona com o valor "separate" atribuido ao "border-collapse" */
+  empty-cells: show; /* Definindo a visibilidade de células vazias */
+}
+
+td, th{
+  height: 40px;
+  vertical-align: middle; /* Alinhando o conteúdo da célula na vertical (Valor padrão: middle) */
+  text-align: center; /* Alinhando o conteúdo da célula na horizontal */
+}
+
+th{
+  background-color: #8a8;
+  color: #fff;
+  font-weight: bold;
+}
+
+/*
+  Comando para formatação zebra.
+  Não é um comando exclusivo para tabelas!
+  Facilita, evitando o uso de classes para obter o mesmo resultado.
+*/
+tr:nth-child(even){
+  background-color: #ddd;
+}
