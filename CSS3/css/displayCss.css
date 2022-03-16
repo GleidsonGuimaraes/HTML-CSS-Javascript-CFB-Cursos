@@ -1,0 +1,36 @@
+
+div, span{
+  border: 1px solid #000;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+/* 
+  "display: none;" Não renderiza o elemento na página.
+
+  "display: block;" O elemento ocupa todo o espaço horizontal da página.
+  
+  "display: inline;" Faz com que o elemento ocupe somente o espaço necessário para seu conteúdo,
+  permitindo que outros elementos também ocupem aquela linha.
+
+  "display: inline-block;" Permite que os elementos que tenham por padrão o valor "inline" possam
+  ser redimensionados.
+
+*/
+
+#d1{
+  /* display: none; */
+}
+
+#s1{
+  display: inline-block;
+}
+
+#d2{
+
+}
+
+#s2{
+
+}

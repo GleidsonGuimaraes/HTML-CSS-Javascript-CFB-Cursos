@@ -1,0 +1,32 @@
+div{
+  border: 1px solid #000;
+  background-color: tomato;
+  width: 100px;
+  height: 100px;
+  text-align: center; /* Alinhamento do conteúdo na horizontal */
+  display: table-cell; 
+  vertical-align: middle; /* Alinhamento do conteúdo na vertical utilizando o display: table-cell */
+}
+
+ol, ul, li{
+  border: 1px solid #000;
+  margin: 0;
+  padding: 0;
+}
+
+ol{
+  margin-top: 20px;
+  display: table;
+}
+
+ul{
+  display: table-row;
+}
+
+li{
+  display: table-cell;
+}
+
+.titulo{
+  background-color: aquamarine;
+}

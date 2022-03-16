@@ -1,0 +1,35 @@
+section{
+  border: 3px solid #f00;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+div{
+  border: 1px solid #000;
+  flex: 1; /* Flex-grow, flex-shrink, flex-basis */
+}
+
+#d1{
+  order: 2;
+}
+
+#d2{
+  order: 1;
+}
+
+#d3{
+  order: 3;
+}
+
+#d4{
+  order: 5;
+}
+
+#d5{
+  order: 6;
+}
+
+#d6{
+  order: 4;
+}
