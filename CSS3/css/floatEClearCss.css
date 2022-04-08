@@ -1,0 +1,21 @@
+img{
+  border: 1px solid #000;
+}
+
+#img1{
+  width: 150px;
+  float: left;
+}
+
+#img2{
+  width: 150px;
+  float: right;
+}
+
+/* A propriedade clear anula a propriedade float */
+/* Para cancelar as duas posições do float utilizamos o valor both na propriedade clear */
+.fix{
+  clear: right;
+}
+
+/* Altere o zoom da página para visualizar o funcionamento da propriedade clear */
