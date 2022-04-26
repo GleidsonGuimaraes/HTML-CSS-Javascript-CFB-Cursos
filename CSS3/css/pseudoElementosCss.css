@@ -1,0 +1,33 @@
+/* before funciona antes do elemento ou na esquerda do elemento */
+p::before{
+  content: "CFB - ";
+  color: #f90;
+}
+
+/* after funciona depois do elemento ou na direita do elemento */
+p::after{
+  content: " - CFB";
+  color: #f90;
+}
+
+/* formata a primeira letra do elemento */
+p::first-letter{
+  color: #09f;
+}
+
+/* formata a primeira linha do elemento */
+p.loren::first-line{
+  font-weight: bold;
+  color: #aaa;
+}
+
+/* formata a seleção de texto da página */
+::selection{
+  color: #f00;
+  background-color: #aaf;
+}
+
+/*
+  ATENÇÃO => como temos um pseudo-elemento já configurado nos elementos p, a formatação incluiu a configuração
+  do before como parte do elemento p  
+*/

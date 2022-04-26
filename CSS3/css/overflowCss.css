@@ -1,0 +1,12 @@
+#d1{
+  border: 1px solid #000;
+  width: 300px;
+  height: 400px;
+  /* a propriedade overflow controla a visibilidade dos itens dentro de um conteiner */
+  /* visible(valor padrão), hidden, scroll, auto */
+  overflow: auto;
+}
+
+#img1{
+  border: 1px solid #000;
+}
