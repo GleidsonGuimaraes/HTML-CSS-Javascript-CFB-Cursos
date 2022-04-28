@@ -1,0 +1,21 @@
+p{
+  width: 300px;
+  height: 250px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: justify;
+  /* O transition só funciona com um evento disparador */
+  transition: width 2s, height 2s, background-color 2s, color 2s, transform 2s;
+  transition-timing-function: ease-out;
+  /* transition-timing-function: cubic-bezier(0,0,0,0); */
+  transition-delay: 1s;
+}
+
+p:hover{
+  width: 500px;
+  height: 120px;
+  background-color: #f00;
+  color: #fff;
+  transform: rotate(360deg);
+}
