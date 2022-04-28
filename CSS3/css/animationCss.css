@@ -1,0 +1,72 @@
+/* do anima1 ao anima3 está comentado no código para exemplificar o animaGeral */
+
+@keyframes anima1{
+  from{
+    left: 300px;
+    top: 280px;
+    background-color: #fff;
+    color: #000;
+  }
+  to{
+    left: 0px;
+    top: 0px;
+    background-color: #f90;
+    color: #ddd;
+  }
+}
+
+@keyframes anima2 {
+  from{
+    background-color: #f90;
+    color: #ddd;
+  }
+  to{
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+@keyframes anima3 {
+  from{
+    left: 0px;
+    top: 0px;
+  }
+  to{
+    left: 300px;
+    top: 280px;
+  }
+}
+
+@keyframes animaGeral {
+  0%{left: 0px; top: 280px;}
+  25%{left: 0px; top: 0px;}
+  50%{left: 300px; top: 0px;}
+  75%{left: 300px; top: 280px;}
+  100%{left: 0px; top: 280px;}
+}
+
+p{
+  position: relative;
+  left: 0px;
+  top: 280px;
+  width: 250px;
+  height: 250px;
+  border: 5px solid #000;
+  background-color: #f90;
+  color: #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: justify;
+  /* animation-name: anima2, anima1, anima3;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s, 4s, 7s; */
+  animation-name: animaGeral;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* animation-play-state é interessante se utilizar no javascript para manipular o elemento com paused
+  ou running */
+  animation-play-state: running;
+  animation-direction: alternate;
+}
