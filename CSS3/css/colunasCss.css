@@ -1,0 +1,16 @@
+p{
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: justify;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 800px;
+  height: 500px;
+  
+  columns: 2;
+
+  column-gap: 50px;
+  column-rule: 1px outset #000;
+}
