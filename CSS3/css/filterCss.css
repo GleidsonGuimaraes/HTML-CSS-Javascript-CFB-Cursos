@@ -1,0 +1,29 @@
+img{
+  /* filter: grayscale(10%); */
+  
+  /* filter: blur(2px); */
+
+  /* filter: brightness(150%); */
+
+  /* filter: contrast(150%); */
+
+  /* drop-shadow(distX distY tam cor) */
+  /* Obs: quanto maior o tamanho, maior o embaçamento da sombra */
+  /* filter: drop-shadow(10px 20px 5px #00f); */
+
+  /* hue-rotate movimenta a MATIZ de cores */
+  /* filter: hue-rotate(180deg); */
+
+  /* filter: invert(); */
+
+  /* filter: opacity(70%); */
+
+  /* filter: saturate(300%); */
+
+  /* Envelhecimento de imagem */
+  /* filter: sepia(0.5); */
+  
+  width: 500px;
+  /* Trabalhando com vários filtros juntos */
+  filter: sepia(0.2) brightness(1.2) saturate(80%) drop-shadow(0px 0px 10px #000);
+}

@@ -1,0 +1,14 @@
+#d1{
+  width: 300px;
+  height: 200px;
+  border: 10px solid #000;
+  padding: 25px;
+  /* O valor border-box não adiciona ao conteiner os valores de padding e border na largura e altura */
+  box-sizing: border-box;
+}
+
+#d2{
+  width: 300px;
+  height: 200px;
+  background-color: #ddd;
+}
