@@ -1,0 +1,26 @@
+/* 
+  O valor "inherit" define para o elemento os valores utilizados no elemento pai. 
+    Ex: Se o body estiver com background: #000; e for definido para uma div(filho) background: inherit,
+    a "div" vai receber o valor definido no body. 
+  O valor "initial" define para o elemento o valor padrão já pré-definido pelo browser.
+*/
+
+html{
+  color: #f9f;
+}
+
+body{
+  color: #f90;
+}
+
+div{
+  color: #09f;
+}
+
+h1{
+  color: inherit;
+}
+
+p{
+  color: initial;
+}

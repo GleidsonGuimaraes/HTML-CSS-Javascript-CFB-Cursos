@@ -1,0 +1,31 @@
+/*
+  Unidade de medida "em" leva em consideração o tamanho da fonte do elemento PAI. OBS: O "em" pode
+  ser usado em qualquer elemento. Ex: "2em == 2x o tamanho do elemento pai"
+*/
+
+/* 
+  Unidade de medida "rem" leva em consideração o tamanho da fonte do elemento RAIZ.
+*/
+
+/* 
+  Unidade de medida "%" leva em consideração o tamanho do elemento ANTERIOR.
+*/
+
+/* 
+  Unidade de medida "vw" leva em consideração a largura da JANELA. Ex: "1vw == 1% da largura da janela"
+  Unidade de medida "vh" leva em consideração a altura da JANELA. Ex: "1vh == 1% da altura da janela"
+  Unidade de medida "ex" leva em consideração o tamanho da LETRA X MINÚSCULO DO ELEMENTO PAI.
+  OBS: a propriedade "ex" não é muito recomendada para uso por conta de compatibilidades e etc.
+*/
+
+/* 
+  Unidades de medidas absolutas "cm, mm, pc, in, pt" são exclusivas para impressões. 
+  pt = pontos
+  pc = picas(se pronuncia paicas)
+  in = polegadas
+*/
+
+p{
+  font-weight: bold;
+  font-size: 20px;
+}
