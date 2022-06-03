@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulando Formulários com Javascript</title>
+
+  <style>
+    form{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  </style>
+  
+</head>
+<body>
+
+  <form name="curso1" id="curso1" action="#" method="post">
+    <label>Nome</label>
+    <input type="text" id="teste" name="fNome" value="Primeiro - 1">
+    <label>Senha</label>
+    <input type="password" name="fSEnha" value="123">
+    <br>
+    <input type="submit" name="btnEnviar" value="Enviar">
+  </form>
+
+  <hr>
+
+  <script src="js/manipulandoForms.js"></script>
+</body>
+</html>
