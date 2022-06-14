@@ -1,3 +1,10 @@
+/*
+  O método "event.keyCode" apresentado no curso foi descontinuado.
+  Links úteis:
+  - https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code
+  - https://developer.mozilla.org/en-US/docs/Web/API/UI_Events/Keyboard_event_code_values
+*/
+
 let dx, dy, px, py, velocidade, obj, tempo;
 
 function iniciar(){
@@ -8,35 +15,33 @@ function iniciar(){
   velocidade = 10;
   obj = document.getElementById("dv1");
 
-  document.addEventListener("keydown", teclaDw);
-  document.addEventListener("keyup", teclaUp);
+  // Substituindo a função teclaDw
+  document.addEventListener("keydown", (event)=>{
+    if(event.key == "ArrowLeft"){
+      dx = -1;
+    }else if(event.key == "ArrowUp"){
+      dy = -1;
+    }else if(event.key == "ArrowRight"){
+      dx = 1;
+    }else if(event.key == "ArrowDown"){
+      dy = 1;
+    } 
+  });
+
+  // Substituindo a função teclaUp
+  document.addEventListener("keyup", (event)=>{
+    if(event.key == "ArrowLeft"){
+      dx = 0;
+    }else if(event.key == "ArrowUp"){
+      dy = 0;
+    }else if(event.key == "ArrowRight"){
+      dx = 0;
+    }else if(event.key == "ArrowDown"){
+      dy = 0;
+    } 
+  });
+
   tempo = setInterval(enterFrame,20);
-}
-
-function teclaDw(){
-  let tecla = event.keyCode;
-  if(tecla == 37){
-    dx = -1;
-  }else if(tecla == 38){
-    dy = -1;
-  }else if(tecla == 39){
-    dx = 1;
-  }else if(tecla == 40){
-    dy = 1;
-  }
-}
-
-function teclaUp(){
-  let tecla = event.keyCode;
-  if(tecla == 37){
-    dx = 0;
-  }else if(tecla == 38){
-    dy = 0;
-  }else if(tecla == 39){
-    dx = 0;
-  }else if(tecla == 40){
-    dy = 0;
-  }
 }
 
 function enterFrame(){
