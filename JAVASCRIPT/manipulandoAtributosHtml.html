@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Atributos Html no Javascript</title>
+
+    <style>
+        .c1{
+            background-color: #f00;
+        }
+        .c2{
+            background-color: #0f0;
+        }
+        .c3{
+            background-color: #00f;
+        }
+        #cores{
+            width: 300px;
+            height: 300px;
+            border: 1px solid;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="trocarCores(1)">Cor 1</button>
+    <button onclick="trocarCores(2)">Cor 2</button>
+    <button onclick="trocarCores(3)">Cor 3</button>
+    <button onclick="removerCor()">Remover cor</button>
+    <button onclick="verificarCor()">Verificar cor</button>
+    <div id="cores"></div>
+
+    <script src="js/manipulandoAtributosHtml.js"></script>
+</body>
+</html>
