@@ -41,9 +41,21 @@
 * O método substr foi descontinuado.
 *
 * Os métodos toLowerCase e toUpperCase convertem toda a string em minúscula e maiúscula, respectivamente.
+*
+* O método toString faz a conversão de um valor em string.
+* Você pode retornar um número em formato de string como decimal, binário, octadecimal ou hexadecimal. Basta indicar o
+* retorno desejado no método sendo eles (), (2), (8) ou (16), respectivamente.
+*
+* O método trim elimina espaços no início e no fim da cadeia de caracteres.
+* O método trim não faz diferença no html, porque ele ignora espaços excessivos.
+*
+* O caracter especial \(saída ou barra invertida), permite a utilização de outros caracteres na string como "", '', etc.
+* O caracter especial \n faz a quebra de linha na string. Esse caracter também não faz diferença no html.
 */
 let texto = document.getElementById("txt").innerHTML;
 let texto1 = ` Aulas 46 e 47 do curso de javascript.`;
+let texto2 =`          Método trim para eliminar espaços no início e no final da string.`;
+let num = 1542;
 let res = texto.match(/[od^e]/ig);
 let res1 = texto.search(/curso/i);
 let res2 = texto.replace(/ aula 46 do curso de javascript./ig," ");
@@ -58,6 +70,8 @@ let res10 = texto.split(" ");
 let res11 = texto.substr(4, 6);
 let res12 = texto.toLowerCase();
 let res13 = texto.toUpperCase();
+let res14 = num.toString();
+let res15 = texto2.trim();
 
 document.write(`Resultado do método match: ${res} : ${res.length}<br>`);
 document.write(`Resultado do método search: ${res1}<br>`);
@@ -74,3 +88,5 @@ document.write(`Resultado do método split: Array completo: ${res10} => Posiçã
 document.write(`Resultado do método subString: ${res11}<br>`);
 document.write(`Resultado do método toLowerCase: ${res12}<br>`);
 document.write(`Resultado do método toUpperCase: ${res13}<br>`);
+document.write(`Resultado do método toString: ${res14} => ${typeof(res14)} | Retorno binário: ${num.toString(2)}<br>`);
+// alert(res15);
